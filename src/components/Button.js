@@ -5,6 +5,7 @@ const Button = ({
   variant,
   type,
   className,
+  onClick,
 }) => {
   const isSecondaryVariant = variant === 'secondary';
 
@@ -13,7 +14,11 @@ const Button = ({
   const getHoverColor = () => (isSecondaryVariant ? 'hover:bg-red-600' : 'hover:bg-emerald-700');
 
   return (
-    <button type={type} className={`${getBackgroundColor()} ${getHoverColor()} transition-colors p-2 rounded text-white ${className}`}>
+    <button
+      onClick={onClick}
+      type={type}
+      className={`${getBackgroundColor()} ${getHoverColor()} transition-colors p-2 rounded text-white ${className}`}
+    >
       {children}
     </button>
   );
@@ -24,6 +29,7 @@ Button.propTypes = {
   variant: PropTypes.oneOf(['primary', 'secondary']),
   type: PropTypes.oneOf(['button', 'submit']),
   className: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
 Button.defaultProps = {
@@ -31,6 +37,7 @@ Button.defaultProps = {
   variant: 'primary',
   type: 'button',
   className: null,
+  onClick: () => {},
 };
 
 export default Button;
