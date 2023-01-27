@@ -17,6 +17,7 @@
       2,
       { "namedComponents": "arrow-function" }
     ],
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/button-has-type": "off"
   }
 }
