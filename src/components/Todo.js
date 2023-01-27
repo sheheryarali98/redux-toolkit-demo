@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 
 import Button from './Button';
 
-import { removeTodo } from '../redux/todos/actions';
+import { removeTodo } from '../redux/slices/todos';
 
 const Todo = ({ todo, className }) => {
   if (!todo) return null;

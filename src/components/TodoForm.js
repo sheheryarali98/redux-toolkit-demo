@@ -7,7 +7,7 @@ import { v4 } from 'uuid';
 import Button from './Button';
 import Input from './Input';
 
-import { addTodo } from '../redux/todos/actions';
+import { addTodo } from '../redux/slices/todos';
 
 const TodoForm = ({ className }) => {
   const dispatch = useDispatch();

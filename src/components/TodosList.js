@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import TodoForm from './TodoForm';
 import Todo from './Todo';
 
-import { getTodos } from '../redux/todos/selectors';
+import { getTodos } from '../redux/slices/selectors';
 
 const TodoList = () => {
   const todos = useSelector(getTodos);

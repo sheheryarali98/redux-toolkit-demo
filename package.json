@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.1",
     "formik": "^2.2.9",
     "husky": "^8.0.3",
     "prop-types": "^15.8.1",
